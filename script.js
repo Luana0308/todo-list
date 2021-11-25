@@ -30,5 +30,12 @@ acessButton.addEventListener("click", function(event){
  let buttonClearListCompleted = document.getElementById("remover-finalizados")
  buttonClearListCompleted.addEventListener("click", function(){
      console.log("imprime 3")
+     let listCheck = document.querySelectorAll(".completed")
+     console.log(listCheck.length)
+     for (let i=0 ; i < listCheck.length; i +=1){
+        listCheck[i].remove()
+        console.log(i)
+     }
+     
  })
 
