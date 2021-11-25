@@ -20,6 +20,15 @@ acessButton.addEventListener("click", function(event){
     })
     list.appendChild(itemList)
     input.value = ""
-
  });
+
+ let buttonClearList = document.getElementById("apaga-tudo")
+ buttonClearList.addEventListener("click", function(){
+    let list = document.getElementById("lista-tarefas")
+    list.innerHTML=""
+ })
+ let buttonClearListCompleted = document.getElementById("remover-finalizados")
+ buttonClearListCompleted.addEventListener("click", function(){
+     console.log("imprime 3")
+ })
 
