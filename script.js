@@ -6,12 +6,18 @@ acessButton.addEventListener("click", function(event){
     itemList.innerText=input.value
     itemList.addEventListener("click",function(event){
        let selectedItensList = document.querySelectorAll(".color-gray")
-       console.log(selectedItensList)
        if(selectedItensList.length >= 1){
          selectedItensList[0].classList.remove("color-gray")
        }
         itemList.classList.add('color-gray')
     });
+    itemList.addEventListener("dblclick", function(event){
+        if(itemList.classList.contains("completed")){
+            itemList.classList.remove("completed")
+        }else {
+            itemList.classList.add("completed")
+        }     
+    })
     list.appendChild(itemList)
     input.value = ""
 
