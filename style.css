@@ -1,6 +1,78 @@
+body {
+    background-color: rgb(210, 247, 243);
+}
+
 .color-gray{
-    background-color: rgb(128,128,128);
+    background-color: #5adb94;
 }
 .completed{
-    text-decoration: line-through solid rgb(0, 0, 0);
+    text-decoration: line-through solid #368986  2px;
 }
+
+.title {
+    font-size: 40px;
+    text-align: center;
+    color: #2e0331;
+    font-style: italic;
+    font-weight: bold;
+}
+
+#funcionamento {
+    text-align: center;
+    color: #8a034d;
+    font-size: larger;
+}
+
+.input, .buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#texto-tarefa {
+   margin-bottom: 10px;
+   margin-top: 10px;
+   margin-right: 8px;
+   padding-left: 100px;
+   border-radius: 5px;
+   border: #368986 5px solid;
+}
+
+#criar-tarefa {
+    border-radius: 5px;
+    border: #04482a 2px solid;
+    padding: 4px;
+    padding-left: 8px;
+    padding-right: 8px;
+    background-color: #368986;
+    color: aliceblue;
+    font-weight: bold;
+
+}
+
+#apaga-tudo {
+    border-radius: 5px;
+    border: #8a034d 2px solid;
+    background-color: #8a034d;
+    color: aliceblue;
+    margin-right: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-weight: bold;
+}
+
+#remover-finalizados {
+    border-radius: 5px;
+    border: #51032e 2px solid;
+    background-color: #51032e;
+    color: aliceblue;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-weight: bold;
+}
+
+#lista-tarefas {
+    font-size: large;
+    font-weight: 600;
+}
+

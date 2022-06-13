@@ -8,13 +8,18 @@
     <title>Document</title>
 </head>
 <body>
-    <header>Minha Lista de Tarefas</header>
+    <header class="title">  Lista de Tarefas ✔️ </header>
     <p id=funcionamento>Clique duas vezes em um item para marcá-lo como completo</p>
-    <input id="texto-tarefa" type="text">
-    <button id="criar-tarefa">Adicionar</button>
+    <div class="input">
+        <input id="texto-tarefa" type="text">
+        <button id="criar-tarefa">Adicionar</button>
+    </div>
+    <div class="buttons">
+        <button id="apaga-tudo">Apagar tudo</button>
+        <button id="remover-finalizados">Remover Finalizados</button> 
+    </div>
     <ol id="lista-tarefas"></ol>
-    <button id="apaga-tudo">Apaga tudo</button>
-    <button id="remover-finalizados">Remover Finalizados</button>
+    
     <script src="script.js"></script>
 </body>
 </html>
